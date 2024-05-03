@@ -13,7 +13,7 @@ data class Usuario (
     @ColumnInfo(name = "email") val email: String?
 ) {
     @PrimaryKey(autoGenerate = true)
-    val uid: Int = 0 // gera o id automaticamente -> dinâmico
+    var uid: Int = 0 // gera o id automaticamente -> dinâmico
 }
 
 // Entidade -> representa a tabela
