@@ -8,7 +8,7 @@ import com.agenda.agendaproject.dao.UsuarioDao
 import com.agenda.agendaproject.model.Usuario
 
 @Database(entities = [Usuario::class], version = 1) //versão do aplicativo
-abstract class AppDatabase : RoomDatabase(), UsuarioDao { //extends da RoomDatabase
+abstract class AppDatabase : RoomDatabase() { //extends da RoomDatabase
 
     abstract fun usuarioDao(): UsuarioDao //extends da UsuarioDao
     //abstrata pq é onde vamos chamar os inserts -> abstração dos dados
