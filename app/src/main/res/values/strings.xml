@@ -1,3 +1,28 @@
 <resources>
     <string name="app_name">AgendaProject</string>
+
+    <string name="signin_title">Crie sua conta</string>
+    <string name="signin_button">Criar conta</string>
+    <string name="signin_footer_txt">Já tem uma conta?</string>
+    <string name="signin_footer_link">Fazer login</string>
+
+    <string name="login_title">Faça seu login</string>
+    <string name="login_button">Entrar</string>
+    <string name="login_footer_txt">Ainda não tem uma conta?</string>
+    <string name="login_footer_link">Cadastre-se</string>
+
+    <string name="hint_name">Nome</string>
+    <string name="hint_surname">Sobrenome</string>
+    <string name="hint_age">Idade</string>
+    <string name="hint_mobile_number">Celular</string>
+    <string name="hint_email">Email</string>
+
+    <string name="txt_create_user">Criar Novo Contato</string>
+    <string name="txt_add">Adicionar</string>
+    <string name="title_new_contact">Novo Contato</string>
+
+    <string name="txt_update_user">Editar Contato</string>
+    <string name="txt_update">Atualizar</string>
+    <string name="title_update">Editar contato</string>
+
 </resources>
