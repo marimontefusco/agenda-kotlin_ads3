@@ -11,7 +11,7 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/btn_createUser"
+        android:id="@+id/btnCreateUser"
         style="@style/Button"
         android:layout_width="260dp"
         android:layout_height="wrap_content"

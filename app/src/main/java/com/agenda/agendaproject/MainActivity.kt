@@ -1,20 +1,33 @@
 package com.agenda.agendaproject
 
+import android.content.Intent
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.agenda.agendaproject.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    // Variáveis
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        //binding -> usando viewBinding pra enxergar os objs da interface dao
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        //Definindo evento de click - btn cadastrar
+        binding.btnCreateUser.setOnClickListener {
+            val navegarTelaCadastro = Intent(this, CreateUser::class.java) // Intent -> para a tela CreateUser
+            startActivity(navegarTelaCadastro)
         }
+
+        binding.btnUpdateUser.setOnClickListener {
+            val navegarTelaAtualizacao = Intent(this, UpdateUser::class.java) // Intent -> para a tela UpdateUser
+            startActivity(navegarTelaAtualizacao)
+        }
+
+
     }
 }
